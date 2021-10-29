@@ -1,0 +1,138 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(40);
+  background-color: transparent;
+  border: 2px solid;
+  text-align: center;
+  text-transform: uppercase;
+  &.-white {
+    color: $clr-neutral--White;
+    border-color: $clr-neutral--White;
+    &:hover,
+    :active {
+      background: $clr-neutral--White;
+      color: $clr-primary--Dark-Violet;
+      cursor: pointer;
+    }
+  }
+  &.-violet {
+    color: $clr-primary--Dark-Violet;
+    border-color: $clr-primary--Dark-Violet;
+    &:hover,
+    :active {
+      background: $clr-primary--Dark-Violet;
+      color: $clr-neutral--White;
+      cursor: pointer;
+    }
+  }
+}
+
+.icon {
+  display: block;
+  &.-people {
+    content: url("../images/icon-people-first.svg");
+  }
+  &.-prices {
+    content: url("../images/icon-affordable-prices.svg");
+  }
+  &.-snappy {
+    content: url("../images/icon-snappy-process.svg");
+  }
+  &.-instagram {
+    content: url("../images/icon-instagram.svg");
+  }
+  &.-facebook {
+    content: url("../images/icon-facebook.svg");
+  }
+  &.-twitter {
+    content: url("../images/icon-twitter.svg");
+  }
+  &.-pinterest {
+    content: url("../images/icon-pinterest.svg");
+  }
+}
+
+.imageDesktop {
+  display: none;
+}
+.main-header {
+  background-color: $clr-neutral--White;
+  width: 100%;
+}
+.main-header {
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(24) 0;
+  }
+}
+.main-hero {
+  background: $clr-primary--Dark-Violet;
+  margin: 0 0 rem(180) 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  > .icon {
+    margin: 0 0 rem(36) 0;
+  }
+  > .heading {
+    margin: 0 0 rem(20) 0;
+  }
+}
+
+.contact {
+  > .container {
+    color: $clr-neutral--White;
+    background-color: $clr-primary--Dark-Violet;
+  }
+}
+.social-menu {
+  display: flex;
+  gap: rem(16);
+  align-items: center;
+  justify-content: center;
+  > .item {
+    &:hover,
+    :active {
+      filter: hue-rotate(266deg) saturate(15%) brightness(15%);
+    }
+  }
+}
+
+.footer-menu {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: rem(14);
+  letter-spacing: rem(1);
+  > .title {
+    margin: 0 0 rem(28) 0;
+  }
+  > .item {
+    color: $clr-primary--Dark-Violet;
+    &:not(:last-child) {
+      margin: 0 0 rem(10) 0;
+    }
+    &:hover,
+    :active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  a {
+    font-weight: bold;
+    color: $clr-primary--Dark-Violet !important;
+  }
+}
