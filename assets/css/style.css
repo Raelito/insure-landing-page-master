@@ -926,6 +926,12 @@ img {
     min-width: 9.125rem;
     height: 2.5rem;
   }
+  .main-nav > .menu-list > .button:hover,
+.main-nav > .menu-list > .button :active {
+    background: #2d2640;
+    color: white;
+    cursor: pointer;
+  }
 
   .main-hero {
     background: linear-gradient(180deg, #2d2640 42.5rem, white 42.5rem);

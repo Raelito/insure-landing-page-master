@@ -274,6 +274,12 @@
       > .button {
         min-width: rem(146);
         height: rem(40);
+        &:hover,
+        :active {
+          background: $clr-primary--Dark-Violet;
+          color: $clr-neutral--White;
+          cursor: pointer;
+        }
       }
     }
   }
