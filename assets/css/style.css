@@ -743,6 +743,12 @@ img {
     width: 100%;
     height: 3.5rem;
   }
+  .main-nav > .menu-list > .button:hover,
+.main-nav > .menu-list > .button :active {
+    background: white;
+    color: #2d2640;
+    cursor: pointer;
+  }
   .main-nav > .menu-mobileBg {
     position: absolute;
     width: 100%;
@@ -973,6 +979,13 @@ img {
 
   .proccess {
     margin: 0 0 9.75rem 0;
+  }
+  .proccess > .container::before {
+    display: block;
+    content: " ";
+    width: 9.375rem;
+    height: 0.0625rem;
+    background-color: #2d2640;
   }
   .proccess > .container > .heading {
     margin: 0 0 5.875rem 0;

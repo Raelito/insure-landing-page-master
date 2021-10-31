@@ -91,6 +91,12 @@
       text-transform: uppercase;
       width: 100%;
       height: rem(56);
+      &:hover,
+      :active {
+        background: $clr-neutral--White;
+        color: $clr-primary--Dark-Violet;
+        cursor: pointer;
+      }
     }
     > .menu-mobileBg {
       position: absolute;
@@ -265,7 +271,6 @@
           cursor: pointer;
         }
       }
-
       > .button {
         min-width: rem(146);
         height: rem(40);
@@ -329,6 +334,14 @@
   .proccess {
     margin: 0 0 rem(156) 0;
     > .container {
+      &::before {
+        display: block;
+        content: " ";
+        width: rem(150);
+        height: rem(1);
+
+        background-color: $clr-primary--Dark-Violet;
+      }
       > .heading {
         margin: 0 0 rem(94) 0;
       }
